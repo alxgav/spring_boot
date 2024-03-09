@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/raving_db
+    username: root
+    password: 123qwerty
+
+flyway:
+  url: jdbc:postgresql://localhost:5432/raving_db
+  user: root
+  password: 123qwerty
+  enabled: true
+  locations:
+    - 'classpath:db/migration'
